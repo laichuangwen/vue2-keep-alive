@@ -45,7 +45,7 @@ const routes = [{
         meta: {
             title: '测试页',
         },
-        component: () => import(/* webpackChunkName: "details" */
+        component: () => import(/* webpackChunkName: "test" */
             '../views/page/details/index.vue'
         ),
     }],
@@ -70,6 +70,7 @@ const generateLable = (to) => {
     }
     return '';
 };
+// 路由钩子
 router.beforeEach((to, from, next) => {
     if (to.meta.title) {
         // 设置激活

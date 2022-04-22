@@ -5,6 +5,7 @@ export default {
         list: [],
     },
     mutations: {
+        // 设置类型
         setTypeItem(state, tabName) {
             const keys = state.list.map((list) => list.tabName);
             const index = keys.indexOf(tabName);
@@ -12,6 +13,7 @@ export default {
                 state.list[index].type = 'click';
             }
         },
+        // 设置当前激活
         setActive(state, name) {
             state.active = name;
         },

@@ -20,6 +20,20 @@ yarn build
 - 解决新增多tab页返回来时没有缓存问题
 - 手动关闭tab标签缓存会自动删除，而且走生命周期钩子或走d-page初始化init方法
 
+## 实现例子注意事项
+- 用vuex的store 存储新增tab即在路由钩子上监听路由变化存储（网上也有很多相关文章）
+- 关闭指定tab时清掉移除vuex的store里面当前关闭的tab值
+- 利用keep-alive来include store的tab值
+- router-view 上要加key
+- 组件内要有对于name，没有name 缓存可没有哈，原因请仔细看Vue文档
+- 路由一定一定只能嵌套一层children即只有一个router-view 
+- 需要多页签缓存的页面要引用d-page组件并实现init初始化方法
+
+作者：Bug小哥哥
+链接：https://juejin.cn/post/7085634605138575373
+来源：稀土掘金
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
 ## D-Page 文档
 ### Attributes
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
