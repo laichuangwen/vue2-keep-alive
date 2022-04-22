@@ -29,10 +29,6 @@ yarn build
 - 路由一定一定只能嵌套一层children即只有一个router-view 
 - 需要多页签缓存的页面要引用d-page组件并实现init初始化方法
 
-作者：Bug小哥哥
-链接：https://juejin.cn/post/7085634605138575373
-来源：稀土掘金
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 ## D-Page 文档
 ### Attributes
