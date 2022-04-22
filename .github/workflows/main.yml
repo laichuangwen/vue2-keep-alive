@@ -16,9 +16,8 @@ jobs:
           node-version: 14
       - name: 构建
         run:   yarn && yarn build
-      - name: 发布到 github
-        uses: laichuangwen/vue2-keep-alive@master
-        env: 
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # 使用刚新建的secret
-          BRANCH: pages # 存放产物的分支名称
-          FOLDER: dist # 存放build后产物的目录
+      - name: 发布 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.3.0
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: dist # The folder the action should deploy.
