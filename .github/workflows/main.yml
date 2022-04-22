@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 检出代码到本地
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
       - name: 安装 Node.js, NPM and Yarn
         uses: actions/setup-node@v2
         with:
