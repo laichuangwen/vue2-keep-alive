@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["add"],{"7e73":function(e,t,n){"use strict";n.r(t);var a=function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("d-page",{attrs:{redirect:"/page/list"}},[e._v(" 新增2733 "),n("el-input",{attrs:{placeholder:"请输入"},model:{value:e.text,callback:function(t){e.text=t},expression:"text"}})],1)},l=[],r={name:"PageAdd",data:function(){return{text:""}}},c=r,u=n("2877"),s=Object(u["a"])(c,a,l,!1,null,null,null);t["default"]=s.exports}}]);
+//# sourceMappingURL=add.96a0c0dc.js.map
